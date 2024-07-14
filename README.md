@@ -7,32 +7,52 @@ This project aims to develop a machine learning model capable of recognizing han
 ### Dataset
 
 **Training Set:** Contains 1,716 images with 785 columns each. The first column is the label, and the remaining 784 columns represent pixel values.
+
 **Test Set:** Contains 1,720 images with 784 columns, representing pixel values.
-Preprocessing
+
+### Preprocessing
+
 **Data Loading:** Loaded training and test datasets from CSV files.
+
 **Data Cleaning:** Removed rows with NaN values to ensure data integrity.
+
 **Normalization:** Pixel values were normalized to a range of 0 to 1.
+
 **Reshaping:** Images were reshaped from a 1D array of 784 values to a 3D array (28x28x1) to be suitable for the CNN input.
+
 **One-Hot Encoding:** Labels were one-hot encoded for the multi-class classification problem.
 
 ### Model Architecture
+
 The Convolutional Neural Network (CNN) architecture consists of:
 
 **Convolutional Layer:** 32 filters, 3x3 kernel size, ReLU activation.
+
 **Max Pooling Layer:** 2x2 pool size.
+
 **Dropout Layer:** 25% dropout rate to prevent overfitting.
+
 **Convolutional Layer:** 64 filters, 3x3 kernel size, ReLU activation.
+
 **Max Pooling Layer:** 2x2 pool size.
+
 **Dropout Layer:** 25% dropout rate.
+
 **Flatten Layer:** Converts 2D matrix to 1D array.
+
 **Fully Connected Layer:** 128 units, ReLU activation.
+
 **Dropout Layer:** 50% dropout rate.
+
 **Output Layer:** 10 units (one for each digit), softmax activation.
 
+
 ### Training
+
 The model was trained using the Adam optimizer and categorical cross-entropy loss function. It achieved a validation accuracy of 94.75% after 10 epochs.
 
 ### Prediction and Submission
+
 The trained model was used to predict the labels for the test dataset. Predictions were saved in a CSV file in the required submission format.
 
 ### Conclusion
