@@ -10,6 +10,8 @@ This project aims to develop a machine learning model capable of recognizing han
 
 **Test Set:** Contains 1,720 images with 784 columns, representing pixel values.
 
+(YOU CAN DOWNLOAD THE DATASET FROM HERE: https://www.kaggle.com/datasets/sakshisinghssg/digit-recognizer-dataset)
+
 ### Preprocessing
 
 **Data Loading:** Loaded training and test datasets from CSV files.
